@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio Formulario</title>
@@ -18,25 +18,44 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
+<form id="formulario suscripcion">
+<p>
+    <label for="nombre">Nombre: <input type="text" name="nombre" placeholder="nombre" id="nombre"></label>
+</p>
+<p>
+    <label for="apellido">Apellido: <input type="text" name="apellido" placeholder="apellido" id="apellido"></label>
+</p>
+    <p>     Sexo: <label for="masculino">Masculino <input type="radio" name="sexo" value="masculino" id="masculino"></label>
+                  <label for="femenino">Femenino <input type="radio" name="sexo" value="femenino" id="femenino"></label>
+</p>
+<p>Edad: <input type="number" name="edad" placeholder="edad">
+</p>
+    <label for="email"><p>Email: <input type="email" name="email" placeholder="email@dominio.com" id="email"></label>
+</p>
+<p>
+    <label for="usuario"> Usuario: <input type="text" name="usuario" placeholder="usuario" id="usuario"></label>
+</p>
+<p>
+    <label for="pass"> Password: <input type="password" name="pass" placeholder="password" id="pass"></label>
+</p>
+<p>
+    <label for="condirmarpass"> Confirmar Password: <input type="password" name="confirmarpass" placeholder="password" id="condirmarpass"></label>
+</p>
+    <p>Tipo de servicio: <label for="free">Free<input type="checkbox" name="tipo_servivcio" value="free" id="free"></label>
+   <label for="standar"> Standard<input type="checkbox" name="tipo_servivcio" value="standar" id="standar"></label>
+   <label for="premium"></label> Premium <input type="checkbox" name="tipo_servivcio" value="premium" id="premium"></labek>
+</p>
+    <label for="tema">Tema:</label>
+    <select id="tema">
+    <option>Política</option>
+    <option>Negocios</option>
+    <option> Tecnología</option>
+    <option> Salud</option>
+</select>
+    <p>
+<label for="comentario"> </label> Agregue un comentario:<textarea id="comentario"> </textarea>
+    </p>
+    <button type="button">Boton de Enviar</button>
 
 
 </body>
