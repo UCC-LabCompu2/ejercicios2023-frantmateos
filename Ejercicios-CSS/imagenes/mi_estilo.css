@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    font-family: Tahoma;
+    background: linear-gradient(to right,#1f1bff,#4CAF50);
+}
+div{
+    border: 2px dashed #f1f1f1;
+    border-radius: 15%;
+    margin: 10px;
+    padding: 5px 50px;
+    border-radius: 50%;
+    box-shadow: 10px 12px #333899;
+}
+#principal{
+    width: 50px;
+    float: left;
+}
+div.especial h3{
+    font-family: 'Rubik',sans-serif;
+    text-shadow: 10px 5px;
+}
